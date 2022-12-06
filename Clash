@@ -5,143 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中转 🇹🇼 TW 6 TG:@airproxies, server: in02.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: US 2 TG:@airproxies, server: 211.72.35.157, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: V2-印度01 中继B | 1.5x, server: in02.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 8 TG:@nodpai, server: in04.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇺🇸 US 31 TG:@nodpai, server: in01.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: 中转 🇺🇸 US 36 TG:@nodpai, server: in03.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: TW 8 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: V2-印度01 中继D | 1.5x, server: in04.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: TW 9 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇰🇷 KR 4 TG:@airproxies, server: in03.my1188.org, port: 63004, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: TW 6 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: TW 2 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇯🇵 JP 30 TG:@nodpai, server: in03.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 2 TG:@airproxies, server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: HK私人订制1, server: sukev-hainans.cndns.shop, port: 20255, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: 澳大利亚悉尼0.5x, server: 01-au01.xmss.vip, port: 16606, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
+  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
   - {name: 中转 🇹🇼 TW 1 TG:@airproxies, server: in03.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: V1-日本 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: V1-日本 多台负载均衡 中继F 1.5x, server: in06.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: TW 5 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 14 TG:@airproxies, server: in06.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: 中转 🇩🇪 DE 5 TG:@nodpai, server: in05.my1188.org, port: 63084, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: de01-cdn.airport-v2.com}, udp: true}
-  - {name: TW 4 → openitsub.com, server: 211.72.35.155, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+  - {name: Philippines-菲律宾, server: frontend.yijianlian.app, port: 54520, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: 印度海得拉巴0.5x, server: 01-in01.xmss.vip, port: 16609, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
+  - {name: 中转 🇹🇼 TW 2 TG:@airproxies, server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
   - {name: V2-日本03 CDN 中继 1.5x, server: in05.my1188.org, port: 63005, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-jp03.mynodes001.one}, udp: true}
+  - {name: V1-台湾 多台负载均衡 中继B 1.5x, server: in02.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 中转 🇺🇸 US 36 TG:@nodpai, server: in03.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
+  - {name: US_2🇺🇸, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusovz2.fovi.tk}, udp: true}
+  - {name: 中转 🇺🇸 US 31 TG:@nodpai, server: in01.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
+  - {name: V1-日本 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 中转 🇭🇰 HK 2 TG:@airproxies, server: in05.my1188.org, port: 63082, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt3-cdn.tencent.best}, udp: true}
   - {name: 中转 🇭🇰 HK 23 TG:@airproxies, server: in05.my1188.org, port: 63081, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt2-cdn.tencent.best}, udp: true}
-  - {name: US 7 TG:@nodpai, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 9 TG:@nodpai, server: in03.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: 中转 🇭🇰 HK 18 TG:@airproxies, server: in03.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: TW 7 → openitsub.com, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: V2-香港 多台负载均衡 中继E | 1.5x, server: in05.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: V1-香港HKT03 CDN 中继 2x, server: in05.my1188.org, port: 63082, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt3-cdn.tencent.best}, udp: true}
-  - {name: V2-日本 多台负载均衡 中继E 1.5x, server: in05.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 中转 🇩🇪 DE 5 TG:@nodpai, server: in05.my1188.org, port: 63084, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: de01-cdn.airport-v2.com}, udp: true}
+  - {name: 中转 🇹🇼 TW 8 TG:@nodpai, server: in04.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: US 10 TG:@nodpai, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
+  - {name: 中转 🇭🇰 HK 6 TG:@airproxies, server: in05.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
+  - {name: US_3🇺🇸, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusovz3.fovi.tk}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,152 +120,109 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V1-台湾 多台负载均衡 中继B 1.5x
       - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -321,36 +238,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇹🇼 TW 6 TG:@airproxies
-      - US 2 TG:@airproxies
-      - V2-印度01 中继B | 1.5x
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - TW 8 → openitsub.com
-      - V2-印度01 中继D | 1.5x
-      - TW 9 → openitsub.com
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - TW 6 → openitsub.com
-      - TW 2 → openitsub.com
-      - 中转 🇯🇵 JP 30 TG:@nodpai
-      - 中转 🇹🇼 TW 2 TG:@airproxies
+      - HK私人订制1
+      - 澳大利亚悉尼0.5x
+      - Japan-日本
       - 中转 🇹🇼 TW 1 TG:@airproxies
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - V1-日本 多台负载均衡 中继F 1.5x
-      - TW 5 → openitsub.com
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
-      - TW 4 → openitsub.com
+      - Philippines-菲律宾
+      - 印度海得拉巴0.5x
+      - 中转 🇹🇼 TW 2 TG:@airproxies
       - V2-日本03 CDN 中继 1.5x
+      - V1-台湾 多台负载均衡 中继B 1.5x
+      - 中转 🇺🇸 US 36 TG:@nodpai
+      - US_2🇺🇸
+      - 中转 🇺🇸 US 31 TG:@nodpai
+      - V1-日本 多台负载均衡 中继D 1.5x
+      - 中转 🇭🇰 HK 2 TG:@airproxies
       - 中转 🇭🇰 HK 23 TG:@airproxies
-      - US 7 TG:@nodpai
-      - 中转 🇸🇬 SG 9 TG:@nodpai
-      - 中转 🇭🇰 HK 18 TG:@airproxies
-      - TW 7 → openitsub.com
-      - V2-香港 多台负载均衡 中继E | 1.5x
-      - V1-香港HKT03 CDN 中继 2x
-      - V2-日本 多台负载均衡 中继E 1.5x
+      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - 中转 🇹🇼 TW 8 TG:@nodpai
+      - US 10 TG:@nodpai
+      - 中转 🇭🇰 HK 6 TG:@airproxies
+      - US_3🇺🇸
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
