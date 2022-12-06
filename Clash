@@ -5,103 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK私人订制1, server: sukev-hainans.cndns.shop, port: 20255, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: TG频道@kxswa|日本 | 倍率 x1, server: dnslinehz.agentlink.cc, port: 21009, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国高速接入点-02, server: us2.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: TG频道@kxswa|韩国 |倍率 x1, server: dnslinehz.agentlink.cc, port: 21063, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国-2.45MB/s(Youtube:不良林), server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
   - {name: 澳大利亚悉尼0.5x, server: 01-au01.xmss.vip, port: 16606, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
-  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇹🇼 TW 1 TG:@airproxies, server: in03.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: Philippines-菲律宾, server: frontend.yijianlian.app, port: 54520, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 印度海得拉巴0.5x, server: 01-in01.xmss.vip, port: 16609, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
-  - {name: 中转 🇹🇼 TW 2 TG:@airproxies, server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: V2-日本03 CDN 中继 1.5x, server: in05.my1188.org, port: 63005, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-jp03.mynodes001.one}, udp: true}
+  - {name: TG频道@kxswa|美国 | 倍率 x1, server: dnslinehz.agentlink.cc, port: 21017, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: TG频道@kxswa|美国 | 倍率 x1 2, server: dnslinehz.agentlink.cc, port: 21015, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: TG频道@kxswa|香港 | 倍率 x1, server: dnssdall.agentlink.cc, port: 21003, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnssdall.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: TG频道@kxswa|马来西亚 | 倍率 x1, server: dnssdall.agentlink.cc, port: 21027, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnssdall.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/download, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: 新加坡高速接入点-02, server: sg2.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 中转 🇮🇳 IN 9 TG:@nodpai, server: in02.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
   - {name: V1-台湾 多台负载均衡 中继B 1.5x, server: in02.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇺🇸 US 36 TG:@nodpai, server: in03.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: US_2🇺🇸, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusovz2.fovi.tk}, udp: true}
-  - {name: 中转 🇺🇸 US 31 TG:@nodpai, server: in01.my1188.org, port: 63014, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: V1-日本 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇭🇰 HK 2 TG:@airproxies, server: in05.my1188.org, port: 63082, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt3-cdn.tencent.best}, udp: true}
-  - {name: 中转 🇭🇰 HK 23 TG:@airproxies, server: in05.my1188.org, port: 63081, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt2-cdn.tencent.best}, udp: true}
-  - {name: 中转 🇩🇪 DE 5 TG:@nodpai, server: in05.my1188.org, port: 63084, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: de01-cdn.airport-v2.com}, udp: true}
+  - {name: FRA🇫🇷, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxfra.fovi.tk}, udp: true}
+  - {name: TG频道@kxswa|新加坡 | 倍率 x1, server: dnslineall.agentlink.cc, port: 21039, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: TG频道@kxswa|香港 | 倍率 x1 2, server: dnslineall.agentlink.cc, port: 21001, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：21 天, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 关注电报https://t.me/aifenxiang2020, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 香港高级接入点-01, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 印度海得拉巴0.5x, server: 01-in01.xmss.vip, port: 16609, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
+  - {name: 中国-355.3KB/s(Youtube:不良林), server: in04.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
+  - {name: 美国高速接入点-01, server: us1.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: HK私人订制1, server: sukev-hainans.cndns.shop, port: 20255, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: TG频道@kxswa|英国 | 倍率 x1, server: dnslineall.agentlink.cc, port: 21031, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
+  - {name: Philippines-菲律宾, server: frontend.yijianlian.app, port: 54520, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: 中国-556.9KB/s(Youtube:不良林), server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 中国-1.29MB/s(Youtube:不良林), server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
+  - {name: 中转 🇸🇬 SG 14 TG:@airproxies, server: in06.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
   - {name: 中转 🇹🇼 TW 8 TG:@nodpai, server: in04.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: US 10 TG:@nodpai, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇭🇰 HK 6 TG:@airproxies, server: in05.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
-  - {name: US_3🇺🇸, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusovz3.fovi.tk}, udp: true}
+  - {name: 香港高级接入点-02, server: hk12.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 中转 🇸🇬 SG 8 TG:@airproxies, server: in04.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
+  - {name: 中转 🇰🇷 KR 4 TG:@airproxies, server: in03.my1188.org, port: 63004, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
+  - {name: 中转 🇯🇵 JP 30 TG:@nodpai, server: in03.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,109 +184,179 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港高速接入点-02
+      - 香港高速接入点-03
+      - TG频道@kxswa|香港 | 倍率 x1
+      - 香港-80端口(自行修改host)
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - V1-日本 多台负载均衡 中继D 1.5x
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 香港高级接入点-01
+      - 香港高级接入点-02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -238,26 +372,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK私人订制1
+      - TG频道@kxswa|日本 | 倍率 x1
+      - 美国高速接入点-02
+      - TG频道@kxswa|韩国 |倍率 x1
+      - 美国-2.45MB/s(Youtube:不良林)
+      - 香港高速接入点-02
       - 澳大利亚悉尼0.5x
-      - Japan-日本
-      - 中转 🇹🇼 TW 1 TG:@airproxies
-      - Philippines-菲律宾
-      - 印度海得拉巴0.5x
-      - 中转 🇹🇼 TW 2 TG:@airproxies
-      - V2-日本03 CDN 中继 1.5x
+      - TG频道@kxswa|美国 | 倍率 x1
+      - 香港高速接入点-03
+      - TG频道@kxswa|美国 | 倍率 x1 2
+      - TG频道@kxswa|香港 | 倍率 x1
+      - TG频道@kxswa|马来西亚 | 倍率 x1
+      - 香港-80端口(自行修改host)
+      - 新加坡高速接入点-02
+      - 中转 🇮🇳 IN 9 TG:@nodpai
       - V1-台湾 多台负载均衡 中继B 1.5x
-      - 中转 🇺🇸 US 36 TG:@nodpai
-      - US_2🇺🇸
-      - 中转 🇺🇸 US 31 TG:@nodpai
-      - V1-日本 多台负载均衡 中继D 1.5x
-      - 中转 🇭🇰 HK 2 TG:@airproxies
-      - 中转 🇭🇰 HK 23 TG:@airproxies
-      - 中转 🇩🇪 DE 5 TG:@nodpai
+      - FRA🇫🇷
+      - TG频道@kxswa|新加坡 | 倍率 x1
+      - Japan-日本
+      - TG频道@kxswa|香港 | 倍率 x1 2
+      - 距离下次重置剩余：21 天
+      - 关注电报https://t.me/aifenxiang2020
+      - 香港高级接入点-01
+      - 印度海得拉巴0.5x
+      - 中国-355.3KB/s(Youtube:不良林)
+      - 美国高速接入点-01
+      - HK私人订制1
+      - TG频道@kxswa|英国 | 倍率 x1
+      - Philippines-菲律宾
+      - 中国-556.9KB/s(Youtube:不良林)
+      - 中国-1.29MB/s(Youtube:不良林)
+      - 中转 🇸🇬 SG 14 TG:@airproxies
       - 中转 🇹🇼 TW 8 TG:@nodpai
-      - US 10 TG:@nodpai
-      - 中转 🇭🇰 HK 6 TG:@airproxies
-      - US_3🇺🇸
+      - 香港高级接入点-02
+      - 中转 🇸🇬 SG 8 TG:@airproxies
+      - 中转 🇰🇷 KR 4 TG:@airproxies
+      - 中转 🇯🇵 JP 30 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
