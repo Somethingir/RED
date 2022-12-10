@@ -5,167 +5,247 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道@kxswa|日本 | 倍率 x1, server: dnslinehz.agentlink.cc, port: 21009, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国高速接入点-02, server: us2.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: TG频道@kxswa|韩国 |倍率 x1, server: dnslinehz.agentlink.cc, port: 21063, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国-2.45MB/s(Youtube:不良林), server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
-  - {name: 香港高速接入点-02, server: hk2.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 澳大利亚悉尼0.5x, server: 01-au01.xmss.vip, port: 16606, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
-  - {name: TG频道@kxswa|美国 | 倍率 x1, server: dnslinehz.agentlink.cc, port: 21017, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: TG频道@kxswa|美国 | 倍率 x1 2, server: dnslinehz.agentlink.cc, port: 21015, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslinehz.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: TG频道@kxswa|香港 | 倍率 x1, server: dnssdall.agentlink.cc, port: 21003, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnssdall.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: TG频道@kxswa|马来西亚 | 倍率 x1, server: dnssdall.agentlink.cc, port: 21027, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnssdall.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/download, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: 新加坡高速接入点-02, server: sg2.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 中转 🇮🇳 IN 9 TG:@nodpai, server: in02.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: V1-台湾 多台负载均衡 中继B 1.5x, server: in02.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: FRA🇫🇷, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxfra.fovi.tk}, udp: true}
-  - {name: TG频道@kxswa|新加坡 | 倍率 x1, server: dnslineall.agentlink.cc, port: 21039, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: Japan-日本, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: TG频道@kxswa|香港 | 倍率 x1 2, server: dnslineall.agentlink.cc, port: 21001, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: 距离下次重置剩余：21 天, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 关注电报https://t.me/aifenxiang2020, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 香港高级接入点-01, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 印度海得拉巴0.5x, server: 01-in01.xmss.vip, port: 16609, type: ss, cipher: chacha20-ietf-poly1305, password: 7be2910f-63a8-4c61-a834-558a10ce3fd0, udp: true}
-  - {name: 中国-355.3KB/s(Youtube:不良林), server: in04.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: 美国高速接入点-01, server: us1.sanfen001.pics, port: 2001, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: HK私人订制1, server: sukev-hainans.cndns.shop, port: 20255, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
-  - {name: TG频道@kxswa|英国 | 倍率 x1, server: dnslineall.agentlink.cc, port: 21031, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: dnslineall.agentlink.cc, skip-cert-verify: true, udp: true}
-  - {name: Philippines-菲律宾, server: frontend.yijianlian.app, port: 54520, type: trojan, password: 7611d56b-fd45-4d96-b0c4-f2cf3baa46b7, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: 中国-556.9KB/s(Youtube:不良林), server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中国-1.29MB/s(Youtube:不良林), server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 14 TG:@airproxies, server: in06.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: 中转 🇹🇼 TW 8 TG:@nodpai, server: in04.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-load-balancer.myn1des.com}, udp: true}
-  - {name: 香港高级接入点-02, server: hk12.sanfen001.pics, port: 443, type: vmess, uuid: e5651d7c-a169-4774-b976-e4aac07dbf93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 8 TG:@airproxies, server: in04.my1188.org, port: 63087, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: 中转 🇰🇷 KR 4 TG:@airproxies, server: in03.my1188.org, port: 63004, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: 中转 🇯🇵 JP 30 TG:@nodpai, server: in03.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 104|新加坡|流媒体解锁|x3.5, server: cn1.cdn.zeroteam.top, port: 48084, type: vmess, uuid: d1667181-eec0-49c9-924f-6589de4d2257, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /LidH231, ws-headers: {Host: sp.dropcoin.icu}, udp: true}
+  - {name: 093|新加坡|流媒体解锁|x3.5, server: cn1.cdn.zeroteam.top, port: 13944, type: trojan, password: d1667181-eec0-49c9-924f-6589de4d2257, sni: cn1.cdn.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: A1香港iplc-098, server: iplc.xiaohouzi.club, port: 20038, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: AM【付费推荐：goo.gs/vip】, server: 185.162.228.228, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: A1香港iplc-092, server: iplc.xiaohouzi.club, port: 20033, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】, server: 203.30.190.190, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: github.com/freefq - 澳大利亚Kooweerup Secondary College 1, server: 203.30.189.189, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: 香港HKT02-家庭宽带, server: hnn.xiaohouzi.club, port: 47223, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 2, server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: US【付费推荐：goo.gs/vip】, server: 141.193.213.20, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DQsafRJn/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: CA【付费推荐：goo.gs/vip】, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 3, server: 203.30.190.192, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: AM【付费推荐：goo.gs/vip】 2, server: 185.162.228.229, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: CY【付费推荐：goo.gs/vip】, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: US【付费推荐：goo.gs/vip】 2, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: A-b新加坡隧道负载均衡节点, server: szf02.xiaohouzi.club, port: 27841, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: szf02.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: CA【付费推荐：goo.gs/vip】 2, server: 23.227.38.38, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 12, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: A--香港HASH02, server: hn.xiaohouzi.club, port: 14185, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 4, server: 203.30.191.191, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: 新加坡A05, server: hn.xiaohouzi.club, port: 18440, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 5, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: CY【付费推荐：goo.gs/vip】 2, server: 203.24.108.10, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: A1香港iplc-07, server: iplc.xiaohouzi.club, port: 20017, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 6, server: 203.30.189.191, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 7, server: 203.30.190.191, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: 韩国new03, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港AWV093, server: hnm.xiaohouzi.club, port: 19356, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 8, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: A-a韩国超级节点, server: gz01.xiaohouzi.club, port: 48701, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: gz01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 9, server: 203.30.191.192, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: 韩国new02, server: hn.xiaohouzi.club, port: 18442, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: BZ【付费推荐：goo.gs/vip】 10, server: 203.30.188.190, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: 香港AZURE-落地097, server: hnm.xiaohouzi.club, port: 17115, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-V02, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港AZURE-落地04, server: hnm.xiaohouzi.club, port: 19354, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 087|首尔|流媒体解锁|x3.0, server: cn1.cdn.zeroteam.top, port: 34494, type: trojan, password: d1667181-eec0-49c9-924f-6589de4d2257, sni: cn1.cdn.zeroteam.top, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯01, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: US【付费推荐：goo.gs/vip】 3, server: 141.193.213.20, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: CY【付费推荐：goo.gs/vip】 3, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 18, server: cu.gongyiyun.cf, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}, udp: true}
+  - {name: 香港-super04, server: hnm.xiaohouzi.club, port: 19365, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国惠普HP 4, server: 15.204.31.63, port: 80, type: vmess, uuid: ee9f4b3b-0bf7-4316-8b10-650a9e706aad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: vahid-spacer.tk}, udp: true}
+  - {name: 108|香港|x3.5, server: qwdqwd89wqd.nekodafu.xyz, port: 51289, type: vmess, uuid: d1667181-eec0-49c9-924f-6589de4d2257, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jks359, ws-headers: {Host: xt-fengyeidc.lop001.xyz}, udp: true}
+  - {name: A----a美国do, server: hnn.xiaohouzi.club, port: 47454, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 香港超级节点01, server: hnm.xiaohouzi.club, port: 17113, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: A--c韩国首尔01, server: hn.xiaohouzi.club, port: 16015, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 土耳其, server: hnm.xiaohouzi.club, port: 17105, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国S04, server: hn.xiaohouzi.club, port: 18464, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 泰国, server: hnm.xiaohouzi.club, port: 47553, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 16, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wo.php, ws-headers: {Host: els200.jslist.tk}, udp: true}
+  - {name: A1香港iplc-093, server: iplc.xiaohouzi.club, port: 20034, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 099|首尔|流媒体解锁|x3.0, server: cn1.cdn.zeroteam.top, port: 25021, type: vmess, uuid: d1667181-eec0-49c9-924f-6589de4d2257, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bfhx6452, ws-headers: {Host: oul.pzc749.xyz}, udp: true}
+  - {name: US【付费推荐：goo.gs/vip】 4, server: 172.67.199.34, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859bc177a33/, ws-headers: {Host: sg3-v2ray.sshkit.org}, udp: true}
+  - {name: CA【付费推荐：goo.gs/vip】 3, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: 097|香港|x3.0, server: ctcs.hffb.xyz, port: 54260, type: vmess, uuid: d1667181-eec0-49c9-924f-6589de4d2257, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /jks359, ws-headers: {Host: xt-fengyeidc.lop001.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -184,179 +264,264 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港高速接入点-02
-      - 香港高速接入点-03
-      - TG频道@kxswa|香港 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 香港高级接入点-01
-      - 香港高级接入点-02
+      - A1香港iplc-098
+      - A1香港iplc-092
+      - 香港HKT02-家庭宽带
+      - A--香港HASH02
+      - A1香港iplc-07
+      - 香港AWV093
+      - 香港AZURE-落地097
+      - 香港AZURE-落地04
+      - 香港-super04
+      - 108|香港|x3.5
+      - 香港超级节点01
+      - A1香港iplc-093
+      - 097|香港|x3.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -372,42 +537,62 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道@kxswa|日本 | 倍率 x1
-      - 美国高速接入点-02
-      - TG频道@kxswa|韩国 |倍率 x1
-      - 美国-2.45MB/s(Youtube:不良林)
-      - 香港高速接入点-02
-      - 澳大利亚悉尼0.5x
-      - TG频道@kxswa|美国 | 倍率 x1
-      - 香港高速接入点-03
-      - TG频道@kxswa|美国 | 倍率 x1 2
-      - TG频道@kxswa|香港 | 倍率 x1
-      - TG频道@kxswa|马来西亚 | 倍率 x1
-      - 香港-80端口(自行修改host)
-      - 新加坡高速接入点-02
-      - 中转 🇮🇳 IN 9 TG:@nodpai
-      - V1-台湾 多台负载均衡 中继B 1.5x
-      - FRA🇫🇷
-      - TG频道@kxswa|新加坡 | 倍率 x1
-      - Japan-日本
-      - TG频道@kxswa|香港 | 倍率 x1 2
-      - 距离下次重置剩余：21 天
-      - 关注电报https://t.me/aifenxiang2020
-      - 香港高级接入点-01
-      - 印度海得拉巴0.5x
-      - 中国-355.3KB/s(Youtube:不良林)
-      - 美国高速接入点-01
-      - HK私人订制1
-      - TG频道@kxswa|英国 | 倍率 x1
-      - Philippines-菲律宾
-      - 中国-556.9KB/s(Youtube:不良林)
-      - 中国-1.29MB/s(Youtube:不良林)
-      - 中转 🇸🇬 SG 14 TG:@airproxies
-      - 中转 🇹🇼 TW 8 TG:@nodpai
-      - 香港高级接入点-02
-      - 中转 🇸🇬 SG 8 TG:@airproxies
-      - 中转 🇰🇷 KR 4 TG:@airproxies
-      - 中转 🇯🇵 JP 30 TG:@nodpai
+      - 104|新加坡|流媒体解锁|x3.5
+      - 093|新加坡|流媒体解锁|x3.5
+      - A1香港iplc-098
+      - AM【付费推荐：goo.gs/vip】
+      - A1香港iplc-092
+      - BZ【付费推荐：goo.gs/vip】
+      - github.com/freefq - 澳大利亚Kooweerup Secondary College 1
+      - 香港HKT02-家庭宽带
+      - BZ【付费推荐：goo.gs/vip】 2
+      - US【付费推荐：goo.gs/vip】
+      - CA【付费推荐：goo.gs/vip】
+      - BZ【付费推荐：goo.gs/vip】 3
+      - AM【付费推荐：goo.gs/vip】 2
+      - CY【付费推荐：goo.gs/vip】
+      - US【付费推荐：goo.gs/vip】 2
+      - A-b新加坡隧道负载均衡节点
+      - CA【付费推荐：goo.gs/vip】 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - A--香港HASH02
+      - BZ【付费推荐：goo.gs/vip】 4
+      - 新加坡A05
+      - BZ【付费推荐：goo.gs/vip】 5
+      - CY【付费推荐：goo.gs/vip】 2
+      - A1香港iplc-07
+      - BZ【付费推荐：goo.gs/vip】 6
+      - BZ【付费推荐：goo.gs/vip】 7
+      - 韩国new03
+      - 香港AWV093
+      - BZ【付费推荐：goo.gs/vip】 8
+      - A-a韩国超级节点
+      - BZ【付费推荐：goo.gs/vip】 9
+      - 韩国new02
+      - BZ【付费推荐：goo.gs/vip】 10
+      - 香港AZURE-落地097
+      - 新加坡-V02
+      - 香港AZURE-落地04
+      - 087|首尔|流媒体解锁|x3.0
+      - 俄罗斯01
+      - US【付费推荐：goo.gs/vip】 3
+      - CY【付费推荐：goo.gs/vip】 3
+      - github.com/freefq - 美国CloudFlare节点 18
+      - 香港-super04
+      - github.com/freefq - 美国惠普HP 4
+      - 108|香港|x3.5
+      - A----a美国do
+      - 香港超级节点01
+      - A--c韩国首尔01
+      - 土耳其
+      - 美国S04
+      - 泰国
+      - github.com/freefq - 美国CloudFlare节点 16
+      - A1香港iplc-093
+      - 099|首尔|流媒体解锁|x3.0
+      - US【付费推荐：goo.gs/vip】 4
+      - CA【付费推荐：goo.gs/vip】 3
+      - 097|香港|x3.0
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
